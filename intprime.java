@@ -17,7 +17,7 @@ if(i%j==0)
 }
 }
 if(count==0)
-System.out.print(i);
+System.out.print(i+" ");
 count=0;
 }
 }
