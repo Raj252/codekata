@@ -9,7 +9,7 @@ class Odd_even {
          {
              if(i%2!=0)
              {
-                 System.out.print(i+"\t");
+                 System.out.print(i+" ");
              }
          } 
         
