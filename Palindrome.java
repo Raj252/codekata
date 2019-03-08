@@ -1,22 +1,29 @@
-import java.io.*;
-import java.util.*;
-class Palindrome
+import java.util.Scanner;
+class prome
 {
-    public static void main(String[] args) 
+    public static void main(String args[])
     {
-        int num, reversedInteger = 0, remainder, originalInteger;
-        Scanner s=new Scanner(Systen.in);
-        num=s.nextInt();
-        originalInteger = num;
-        while( num != 0 )
+        int number, m, a = 0,x;
+        Scanner input = new Scanner(System.in);
+         
+        number = input.nextInt();
+        m = number;
+     
+        while(number > 0)
         {
-            remainder = num % 10;
-            reversedInteger = reversedInteger * 10 + remainder;
-            num  /= 10;
+            x = number % 10;
+            a = a * 10 + x;
+            number = number / 10;
         }
-        if (originalInteger == reversedInteger)
+        if(a == m)
+        {
             System.out.println("yes");
+        }
         else
+        {
             System.out.println("no");
+        }
+        
+        
     }
 }
